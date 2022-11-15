@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Backimage from './assets/bg1.png'
+import Home from './components/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=' w-full min-h-screen bg-cover bg-fixed '  style={{ backgroundImage: `url(${Backimage})` }}>
+      <div className='bg-black bg-opacity-30 w-full min-h-screen'>
+      <Navbar/>
+      <Home/>
+      </div>
     </div>
   );
 }
