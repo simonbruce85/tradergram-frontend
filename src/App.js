@@ -9,6 +9,7 @@ function App() {
       <div className='bg-black bg-opacity-30 w-full min-h-screen'>
       <Navbar/>
       <Home/>
+      <Home/>
       </div>
     </div>
   );
