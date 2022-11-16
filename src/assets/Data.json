@@ -1,0 +1,36 @@
+{
+  "teamMembers": [
+    {
+      "id": "0",
+      "name": "Gregory",
+      "role": "CEO",
+      "img": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "twitter": "https://github.com/simonbruce85/kaninosca",
+      "Facebook": "https://simons-to-do-list.netlify.app/"
+    },
+    {
+      "id": "1",
+      "name": "Simon",
+      "role": "Developer",
+      "img": "https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png",
+      "twitter": "https://github.com/simonbruce85/kaninosca",
+      "Facebook": "https://simons-to-do-list.netlify.app/"
+    },
+    {
+      "id": "2",
+      "name": "Gregory",
+      "role": "CEO",
+      "img": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "twitter": "https://github.com/simonbruce85/kaninosca",
+      "Facebook": "https://simons-to-do-list.netlify.app/"
+    },
+    {
+      "id": "3",
+      "name": "Simon",
+      "role": "Developer",
+      "img": "https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png",
+      "twitter": "https://github.com/simonbruce85/kaninosca",
+      "Facebook": "https://simons-to-do-list.netlify.app/"
+    }
+  ]
+}

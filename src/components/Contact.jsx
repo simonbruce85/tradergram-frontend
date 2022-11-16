@@ -2,9 +2,9 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div className="min-h-screen w-full flex justify-center items-center bg-black bg-opacity-40 '">
-            <div className="w-[90%] h-[500px] flex items-center  justify-center border-black border-2">
-                <div className="flex-col flex h-full justify-center items-center w-full max-w-[50%] bg-black bg-opacity-70 rounded-xl   text-gray-300 ">
+        <div className="min-h-screen  w-full flex justify-center items-center bg-black bg-opacity-40 '">
+            <div className="w-[90%] h-[500px] mt-16 md:mt-0 flex items-center  justify-center border-black border-2">
+                <div className="flex-col flex h-full justify-center items-center w-full lg:max-w-[40%] px-4 bg-black bg-opacity-70 rounded-xl   text-gray-300 ">
                     <div className='my-4'>
                         <h1>Contact Us</h1>
                         <p>We'll back to you as soon as possible</p>
@@ -32,7 +32,7 @@ const Contact = () => {
                             name="email"
                         />
                         <textarea
-                            className="bg-transparent border-b-2 border-[#185818a1] p-2 text-[#ccd6f6]"
+                            className="bg-transparent border-b-2 border-[#185818a1] p-2 text-[#ccd6f6] resize-none"
                             name="message"
                             rows="8"
                             placeholder="Message"

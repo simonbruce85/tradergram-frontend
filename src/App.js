@@ -9,6 +9,7 @@ import Fullpage, {
   FullpageNavigation,
 } from "@ap.cx/react-fullpage";
 import Contact from "./components/Contact";
+import Team from "./components/Team";
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
             style={{ backgroundImage: `url(${Backimage})` }}
           >
             <Navbar />
-            <Contact />
+            <Team />
           </FullpageSection>
         </FullPageSections>
       </Fullpage>
