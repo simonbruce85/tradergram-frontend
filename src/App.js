@@ -3,45 +3,43 @@ import Navbar from "./components/Navbar";
 import Backimage from "./assets/bg.png";
 import Backimage1 from "./assets/bg1.png";
 import Home from "./components/Home";
-import Fullpage, {
-  FullPageSections,
-  FullpageSection,
-  FullpageNavigation,
-} from "@ap.cx/react-fullpage";
 import Contact from "./components/Contact";
 import Team from "./components/Team";
 
-function App() {
-  return (
-    <>
-      <Fullpage>
-        <FullpageNavigation itemStyle={{ backgroundColor: "white" }} />
-        <FullPageSections>
-          <FullpageSection
-            className=" w-full min-h-screen bg-cover bg-fixed "
-            style={{ backgroundImage: `url(${Backimage1})` }}
-          >
-            <Navbar />
-            <Home />
-          </FullpageSection>
-          <FullpageSection
-            className=" w-full min-h-screen bg-cover bg-fixed "
-            style={{ backgroundImage: `url(${Backimage})` }}
-          >
-            <Navbar />
-            <Contact />
-          </FullpageSection>
-          <FullpageSection
-            className=" w-full min-h-screen bg-cover bg-fixed "
-            style={{ backgroundImage: `url(${Backimage})` }}
-          >
-            <Navbar />
-            <Team />
-          </FullpageSection>
-        </FullPageSections>
-      </Fullpage>
-    </>
-  );
-}
+import React from "react";
+import ReactFullpage from "@fullpage/react-fullpage";
+import './index.css';
 
+const anchors = ["home", "contact", "team"];
+
+const App = () => (
+  <ReactFullpage
+    anchors={anchors}
+    navigation
+    navigationTooltips={anchors}
+    navigat
+
+    className=""
+    onLeave={(origin, destination, direction) => {
+      console.log("onLeave event", { origin, destination, direction });
+    }}
+    render={({ state, fullpageApi }) => {
+      console.log("render prop change", state, fullpageApi);
+
+      return (
+        <div>
+          <div className="section">
+           <Home  fullpageApi={fullpageApi}/>
+          </div>
+          <div className="section">
+          <Contact fullpageApi={fullpageApi}/>
+          </div>
+          <div className="section">
+          <Team  fullpageApi={fullpageApi}/>
+          </div>
+        </div>
+      );
+    }}
+  />
+);
 export default App;

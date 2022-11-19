@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+body {
+    font-family: arial, helvetica;
+  }
+
+  .outlinedFont{
+    font-family: 'Londrina Outline', cursive;
+  }
+  
+  .fp-viewing-home #fp-nav ul li a span{
+    background: #d1d5db
+  }
+  .fp-viewing-contact #fp-nav ul li a span{
+    background: #d1d5db
+  }
+  .fp-viewing-team #fp-nav ul li a span{
+    background: #d1d5db
+  }
